@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "423021209869",
+    "firebase_url": "https://authet-android.firebaseio.com",
+    "project_id": "authet-android",
+    "storage_bucket": "authet-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423021209869:android:0042997124d175fe9ee844",
+        "android_client_info": {
+          "package_name": "com.kanjav.sign_up"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423021209869-sr9nbt6tma18nop8be077v6bahq7c84a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_q2aRCgf8z7BLO44Bcj96VOt2C6PadvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "423021209869-sr9nbt6tma18nop8be077v6bahq7c84a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
