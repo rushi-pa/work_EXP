@@ -1,0 +1,5 @@
+Name : Rushi Dinesh Patel
+STUDENT NO: 108189192
+
+In this assignment I have learned that the modules can be inter linked to make a complete code which will be fully hidden from the client and make sure that the user input is validated before entering it into the data variable member. I have also learned how to insert the strings into the format as we want and how can we we use the data file for our input and saving our output which makes our work easy. I have also learned that the function can sometimes be used many times and the operators may not help you in all situation you must find a way to make it equal and make sure the code runs perfectly except that every thing was easy.
+Also I have learned how to make and use fstream object in order to handle the files for input and output of our program and also learned that the output can be sent or recieved in our way.

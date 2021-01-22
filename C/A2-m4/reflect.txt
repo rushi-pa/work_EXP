@@ -1,0 +1,16 @@
+//==============================================
+// Name:                  Rushi Dinesh Patel
+// Student Number: 108189192
+// Email:                  rdpatel30@myseneca.ca
+// Section:               NYY
+// Date:                   11/26/2019
+//==============================================
+// Assignment:         2
+// Milestone:           4  
+//==============================================
+
+While doing the milestone 1, 2, 3 and 4, I have learned managing arrays, pointers and value passed by the arrays using pointers. I have learned that arrays can be passed by using the & and pointers to use the values in it. Also, I have learned that structures that are declared in the helpers function is useful for the code readability and making it is easy to use.
+
+The functions getTenDigitPhone in very useful in checking in that the number user entered is within the range and the number is not containing a character. Find contact index is a very useful function which helps in finding a string using its index or an similar variable content. It helps you find the specific string or array index you are searching for.
+
+In this assignment functions helped a lot. For me they were pretty mandatory as one always want to repeat some of the functions a couple of time and save or delete data accordingly. One cannot write the whole code in a single loop without an error. Also the helpers and headers helps a lot as it contains lots of data that is manageable by the .c files.  

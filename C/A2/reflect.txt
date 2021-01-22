@@ -1,0 +1,15 @@
+//==============================================
+// Name:                  Rushi Dinesh Patel
+// Student Number: 108189192
+// Email:                  rdpatel30@myseneca.ca
+// Section:               NYY
+// Date:                   11/08/2019
+//==============================================
+// Assignment:         2
+// Milestone:           2
+//==============================================
+During the milestone 1 and 2 of assignment 2 I have learned that how making functions and header files while programming. A header file helps the programmer to make structures, function prototypes, and many other pre defined and user defined functions. It also helps you to find and locate function definition which might be located in other .c file.
+
+Function has a name and it is reusable which have special coding to perform a specific task, and it can be executed as many times as you want in different parts of c program as required. Functions are used because we do not want to write the whole code every time we need that, rather than that we can just make a function which will hold the code and execute it when it is called.
+
+Helper functions are in different file because they are performing the computational part of another function so it is kind of functioning helping another function to complete the whole procedure. They are separated in another file because they are not required in that file and can make the function loop, rather than that we can just assign them to a header file which can return a value.

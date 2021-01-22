@@ -1,0 +1,6 @@
+CPU 215.99 HST
+SSD 256.39 HST
+Warranty 31.99 PST
+Memory 125.00 HST
+DVD-Writable 101.45 GST
+Student_Coupon -50.00

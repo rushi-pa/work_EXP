@@ -1,0 +1,15 @@
+//==============================================
+// Name:           Rushi Dinesh Patel
+// Student Number: 108189192
+// Email:          rdpatel30@myseneca.ca
+// Section:        NYY
+// Date:           11/08/2019
+//==============================================
+// Assignment:     1
+// Milestone:      4
+//==============================================
+By completing the milestone 3 and 4, I have learned that the header file can be used as a data transferor between two different c programs and can be used to declare user defined structure and function prototype. It can be also used to call functions through the main file, pass the control to header than to the contact.c function file. This way one can make the program more understandable. I have also learned that how much naming conventions are important and what happened if you forget to make a word capital! 
+
+In addition to that, in the milestone 3 and 4, the assignment has asked us to make the contact named user defined structure in order to achieve two things. 1) If we declare Structure within a structure than now we can give them memory when the structure 1 is called and also we do not have to write the whole structural address, rather than that we can just pass the values or the address via pointers. 2) We have created an array in the main function which can be further used to store data of different members according to our wish.
+
+Finally, the removal of * was made to make the program more efficient. Rather than passing the address we passed the values so that the original values do not get changed. Also the pointers have been used so that the function does not copy the parameters. Also by passing the value we intentionally create a copy of that variable so that we might not change the original value in the main function. Besides this pointers are made to pass address not the values. So it is not a good idea to pass the pointers as an argument to the function. Also we could use arrow notation to make the design better.

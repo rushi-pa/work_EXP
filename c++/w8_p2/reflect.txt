@@ -1,0 +1,43 @@
+Name : Rushi Patel
+Student No :  108:189:192
+- The advantage 
+Smart pointer are useful when we need an explicit definition of the pointer. It also helps to do resourse management to implicitly handle so no leaks are possible.
+
+for ex:
+
+	List<Product> mergeSmart(const List<Description>& desc, const List<Price>& price) {
+		List<Product> priceList;
+		// TODO: Add your e_val here to build a list of products
+		// 		using smart pointers
+		bool P_FOUND{ false };
+		for (size_t L{ 0ul }; L < desc.size(); L++) 
+		{
+			for (size_t N{ 0ul }; N < price.size() && !P_FOUND; N++) 
+			{
+				if (desc[L].e_val == price[N].e_val) 
+				{
+					P_FOUND = true;
+					std::unique_ptr<Product>
+					 T(new Product(desc[L].desc,
+						 price[N].price));
+					T->validate(); 
+					priceList += T;
+				}
+			}
+			P_FOUND = false;
+		}
+		return priceList;
+	}
+}
+- List the difference between raw and smart pointer syntax in your solution.
+
+the difference is derefrencing operation
+
+ raw pointer:
+Product* p = new Product(desc[i].desc, price[x].price);
+raw pointer needs derefrencing
+smart pointer:
+std::unique_ptr<Product> p { new Product(desc[i].desc, price[x].price) };
+
+Quiz Reflection all Correct
+
