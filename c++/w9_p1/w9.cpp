@@ -1,22 +1,4 @@
-/**********************************************************
- * Name: Parsa Parichehreh
- * Student ID: 156794182
- * Seneca email: pparichehreh1@myseneca.ca
- * Course: OOP345
- * Section: NCC
- * Date: July 29, 2020
- * Workshop 9 Part 1
- **********************************************************/
 
- /**********************************************************
-   I have done all the coding by myself and only copied the code that
-   my professor provided to complete my workshops and assignments.
-
-  **********************************************************/
-
-
-// Workshop 9 - Multi-Threading
-// w9.cpp
 
 #include <iostream>
 #include <fstream>
