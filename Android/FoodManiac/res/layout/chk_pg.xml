@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#909EEC">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="180dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="48dp"
+        android:autoText="true"
+        android:text="Order Summary"
+        android:textStyle="italic"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/ls_view"
+        android:layout_width="356dp"
+        android:layout_height="372dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tot_txt"
+        android:layout_width="282dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="36dp"
+        android:autoText="true"
+        android:text="Total         :"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ls_view" />
+
+    <Button
+        android:id="@+id/edt_ord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="44dp"
+        android:onClick="edt_ord"
+        android:text="Edit Order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tot_txt" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="122dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="44dp"
+        android:onClick="sub"
+        android:text="Submit"
+        app:layout_constraintStart_toEndOf="@+id/edt_ord"
+        app:layout_constraintTop_toBottomOf="@+id/tot_txt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
