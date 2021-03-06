@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BC0C95A25E6CA1F008C3BCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0C95925E6CA1F008C3BCB /* AppDelegate.swift */; };
+		3BC0C95C25E6CA1F008C3BCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0C95B25E6CA1F008C3BCB /* SceneDelegate.swift */; };
+		3BC0C95E25E6CA1F008C3BCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0C95D25E6CA1F008C3BCB /* ViewController.swift */; };
+		3BC0C96125E6CA1F008C3BCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC0C95F25E6CA1F008C3BCB /* Main.storyboard */; };
+		3BC0C96325E6CA1F008C3BCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC0C96225E6CA1F008C3BCB /* Assets.xcassets */; };
+		3BC0C96625E6CA1F008C3BCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC0C96425E6CA1F008C3BCB /* LaunchScreen.storyboard */; };
+		3BC0C97125E6CA20008C3BCB /* Rushi_GuessTheNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0C97025E6CA20008C3BCB /* Rushi_GuessTheNumberTests.swift */; };
+		3BC0C97C25E6CA20008C3BCB /* Rushi_GuessTheNumberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0C97B25E6CA20008C3BCB /* Rushi_GuessTheNumberUITests.swift */; };
+		3BC0C9A525E6F47D008C3BCB /* ScoreBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0C9A425E6F47D008C3BCB /* ScoreBoard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BC0C96D25E6CA20008C3BCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BC0C94E25E6CA1F008C3BCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BC0C95525E6CA1F008C3BCB;
+			remoteInfo = Rushi_GuessTheNumber;
+		};
+		3BC0C97825E6CA20008C3BCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BC0C94E25E6CA1F008C3BCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BC0C95525E6CA1F008C3BCB;
+			remoteInfo = Rushi_GuessTheNumber;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BC0C95625E6CA1F008C3BCB /* Rushi_GuessTheNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rushi_GuessTheNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC0C95925E6CA1F008C3BCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BC0C95B25E6CA1F008C3BCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3BC0C95D25E6CA1F008C3BCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BC0C96025E6CA1F008C3BCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BC0C96225E6CA1F008C3BCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BC0C96525E6CA1F008C3BCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BC0C96725E6CA1F008C3BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BC0C96C25E6CA20008C3BCB /* Rushi_GuessTheNumberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rushi_GuessTheNumberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC0C97025E6CA20008C3BCB /* Rushi_GuessTheNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rushi_GuessTheNumberTests.swift; sourceTree = "<group>"; };
+		3BC0C97225E6CA20008C3BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BC0C97725E6CA20008C3BCB /* Rushi_GuessTheNumberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rushi_GuessTheNumberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC0C97B25E6CA20008C3BCB /* Rushi_GuessTheNumberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rushi_GuessTheNumberUITests.swift; sourceTree = "<group>"; };
+		3BC0C97D25E6CA20008C3BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BC0C9A425E6F47D008C3BCB /* ScoreBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BC0C95325E6CA1F008C3BCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC0C96925E6CA20008C3BCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC0C97425E6CA20008C3BCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BC0C94D25E6CA1F008C3BCB = {
+			isa = PBXGroup;
+			children = (
+				3BC0C95825E6CA1F008C3BCB /* Rushi_GuessTheNumber */,
+				3BC0C96F25E6CA20008C3BCB /* Rushi_GuessTheNumberTests */,
+				3BC0C97A25E6CA20008C3BCB /* Rushi_GuessTheNumberUITests */,
+				3BC0C95725E6CA1F008C3BCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BC0C95725E6CA1F008C3BCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BC0C95625E6CA1F008C3BCB /* Rushi_GuessTheNumber.app */,
+				3BC0C96C25E6CA20008C3BCB /* Rushi_GuessTheNumberTests.xctest */,
+				3BC0C97725E6CA20008C3BCB /* Rushi_GuessTheNumberUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BC0C95825E6CA1F008C3BCB /* Rushi_GuessTheNumber */ = {
+			isa = PBXGroup;
+			children = (
+				3BC0C95925E6CA1F008C3BCB /* AppDelegate.swift */,
+				3BC0C95B25E6CA1F008C3BCB /* SceneDelegate.swift */,
+				3BC0C95D25E6CA1F008C3BCB /* ViewController.swift */,
+				3BC0C95F25E6CA1F008C3BCB /* Main.storyboard */,
+				3BC0C96225E6CA1F008C3BCB /* Assets.xcassets */,
+				3BC0C96425E6CA1F008C3BCB /* LaunchScreen.storyboard */,
+				3BC0C96725E6CA1F008C3BCB /* Info.plist */,
+				3BC0C9A425E6F47D008C3BCB /* ScoreBoard.swift */,
+			);
+			path = Rushi_GuessTheNumber;
+			sourceTree = "<group>";
+		};
+		3BC0C96F25E6CA20008C3BCB /* Rushi_GuessTheNumberTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BC0C97025E6CA20008C3BCB /* Rushi_GuessTheNumberTests.swift */,
+				3BC0C97225E6CA20008C3BCB /* Info.plist */,
+			);
+			path = Rushi_GuessTheNumberTests;
+			sourceTree = "<group>";
+		};
+		3BC0C97A25E6CA20008C3BCB /* Rushi_GuessTheNumberUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3BC0C97B25E6CA20008C3BCB /* Rushi_GuessTheNumberUITests.swift */,
+				3BC0C97D25E6CA20008C3BCB /* Info.plist */,
+			);
+			path = Rushi_GuessTheNumberUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BC0C95525E6CA1F008C3BCB /* Rushi_GuessTheNumber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC0C98025E6CA20008C3BCB /* Build configuration list for PBXNativeTarget "Rushi_GuessTheNumber" */;
+			buildPhases = (
+				3BC0C95225E6CA1F008C3BCB /* Sources */,
+				3BC0C95325E6CA1F008C3BCB /* Frameworks */,
+				3BC0C95425E6CA1F008C3BCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rushi_GuessTheNumber;
+			productName = Rushi_GuessTheNumber;
+			productReference = 3BC0C95625E6CA1F008C3BCB /* Rushi_GuessTheNumber.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BC0C96B25E6CA20008C3BCB /* Rushi_GuessTheNumberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC0C98325E6CA20008C3BCB /* Build configuration list for PBXNativeTarget "Rushi_GuessTheNumberTests" */;
+			buildPhases = (
+				3BC0C96825E6CA20008C3BCB /* Sources */,
+				3BC0C96925E6CA20008C3BCB /* Frameworks */,
+				3BC0C96A25E6CA20008C3BCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BC0C96E25E6CA20008C3BCB /* PBXTargetDependency */,
+			);
+			name = Rushi_GuessTheNumberTests;
+			productName = Rushi_GuessTheNumberTests;
+			productReference = 3BC0C96C25E6CA20008C3BCB /* Rushi_GuessTheNumberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3BC0C97625E6CA20008C3BCB /* Rushi_GuessTheNumberUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC0C98625E6CA20008C3BCB /* Build configuration list for PBXNativeTarget "Rushi_GuessTheNumberUITests" */;
+			buildPhases = (
+				3BC0C97325E6CA20008C3BCB /* Sources */,
+				3BC0C97425E6CA20008C3BCB /* Frameworks */,
+				3BC0C97525E6CA20008C3BCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BC0C97925E6CA20008C3BCB /* PBXTargetDependency */,
+			);
+			name = Rushi_GuessTheNumberUITests;
+			productName = Rushi_GuessTheNumberUITests;
+			productReference = 3BC0C97725E6CA20008C3BCB /* Rushi_GuessTheNumberUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BC0C94E25E6CA1F008C3BCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3BC0C95525E6CA1F008C3BCB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3BC0C96B25E6CA20008C3BCB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3BC0C95525E6CA1F008C3BCB;
+					};
+					3BC0C97625E6CA20008C3BCB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3BC0C95525E6CA1F008C3BCB;
+					};
+				};
+			};
+			buildConfigurationList = 3BC0C95125E6CA1F008C3BCB /* Build configuration list for PBXProject "Rushi_GuessTheNumber" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BC0C94D25E6CA1F008C3BCB;
+			productRefGroup = 3BC0C95725E6CA1F008C3BCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BC0C95525E6CA1F008C3BCB /* Rushi_GuessTheNumber */,
+				3BC0C96B25E6CA20008C3BCB /* Rushi_GuessTheNumberTests */,
+				3BC0C97625E6CA20008C3BCB /* Rushi_GuessTheNumberUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BC0C95425E6CA1F008C3BCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC0C96625E6CA1F008C3BCB /* LaunchScreen.storyboard in Resources */,
+				3BC0C96325E6CA1F008C3BCB /* Assets.xcassets in Resources */,
+				3BC0C96125E6CA1F008C3BCB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC0C96A25E6CA20008C3BCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC0C97525E6CA20008C3BCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BC0C95225E6CA1F008C3BCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC0C95E25E6CA1F008C3BCB /* ViewController.swift in Sources */,
+				3BC0C95A25E6CA1F008C3BCB /* AppDelegate.swift in Sources */,
+				3BC0C95C25E6CA1F008C3BCB /* SceneDelegate.swift in Sources */,
+				3BC0C9A525E6F47D008C3BCB /* ScoreBoard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC0C96825E6CA20008C3BCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC0C97125E6CA20008C3BCB /* Rushi_GuessTheNumberTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC0C97325E6CA20008C3BCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC0C97C25E6CA20008C3BCB /* Rushi_GuessTheNumberUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BC0C96E25E6CA20008C3BCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BC0C95525E6CA1F008C3BCB /* Rushi_GuessTheNumber */;
+			targetProxy = 3BC0C96D25E6CA20008C3BCB /* PBXContainerItemProxy */;
+		};
+		3BC0C97925E6CA20008C3BCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BC0C95525E6CA1F008C3BCB /* Rushi_GuessTheNumber */;
+			targetProxy = 3BC0C97825E6CA20008C3BCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3BC0C95F25E6CA1F008C3BCB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BC0C96025E6CA1F008C3BCB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BC0C96425E6CA1F008C3BCB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BC0C96525E6CA1F008C3BCB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BC0C97E25E6CA20008C3BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BC0C97F25E6CA20008C3BCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BC0C98125E6CA20008C3BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6U65CB7C3;
+				INFOPLIST_FILE = Rushi_GuessTheNumber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "baba.Rushi-GuessTheNumber";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BC0C98225E6CA20008C3BCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6U65CB7C3;
+				INFOPLIST_FILE = Rushi_GuessTheNumber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "baba.Rushi-GuessTheNumber";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3BC0C98425E6CA20008C3BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6U65CB7C3;
+				INFOPLIST_FILE = Rushi_GuessTheNumberTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "baba.Rushi-GuessTheNumberTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rushi_GuessTheNumber.app/Rushi_GuessTheNumber";
+			};
+			name = Debug;
+		};
+		3BC0C98525E6CA20008C3BCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6U65CB7C3;
+				INFOPLIST_FILE = Rushi_GuessTheNumberTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "baba.Rushi-GuessTheNumberTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rushi_GuessTheNumber.app/Rushi_GuessTheNumber";
+			};
+			name = Release;
+		};
+		3BC0C98725E6CA20008C3BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6U65CB7C3;
+				INFOPLIST_FILE = Rushi_GuessTheNumberUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "baba.Rushi-GuessTheNumberUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rushi_GuessTheNumber;
+			};
+			name = Debug;
+		};
+		3BC0C98825E6CA20008C3BCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6U65CB7C3;
+				INFOPLIST_FILE = Rushi_GuessTheNumberUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "baba.Rushi-GuessTheNumberUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rushi_GuessTheNumber;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BC0C95125E6CA1F008C3BCB /* Build configuration list for PBXProject "Rushi_GuessTheNumber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC0C97E25E6CA20008C3BCB /* Debug */,
+				3BC0C97F25E6CA20008C3BCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC0C98025E6CA20008C3BCB /* Build configuration list for PBXNativeTarget "Rushi_GuessTheNumber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC0C98125E6CA20008C3BCB /* Debug */,
+				3BC0C98225E6CA20008C3BCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC0C98325E6CA20008C3BCB /* Build configuration list for PBXNativeTarget "Rushi_GuessTheNumberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC0C98425E6CA20008C3BCB /* Debug */,
+				3BC0C98525E6CA20008C3BCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC0C98625E6CA20008C3BCB /* Build configuration list for PBXNativeTarget "Rushi_GuessTheNumberUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC0C98725E6CA20008C3BCB /* Debug */,
+				3BC0C98825E6CA20008C3BCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BC0C94E25E6CA1F008C3BCB /* Project object */;
+}
