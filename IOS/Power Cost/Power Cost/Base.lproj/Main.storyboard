@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Power_Cost" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On-Peak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ea9-Gc-Zh3">
+                                <rect key="frame" x="20" y="298" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mid-Peak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYu-aO-2n5">
+                                <rect key="frame" x="20" y="496" width="73" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power Cost Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rp-Gg-aqn">
+                                <rect key="frame" x="20" y="64" width="374" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLF-Hr-sVq">
+                                <rect key="frame" x="68" y="687.5" width="279" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="279" id="H1X-S0-ZwF"/>
+                                    <constraint firstAttribute="height" constant="35" id="kwk-55-v7R"/>
+                                </constraints>
+                                <state key="normal" title="Calculate Cost"/>
+                                <connections>
+                                    <action selector="calc_chg" destination="BYZ-38-t0r" eventType="touchUpInside" id="WS3-9b-X2u"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="volt" translatesAutoresizingMaskIntoConstraints="NO" id="bLn-ta-bAE">
+                                <rect key="frame" x="68" y="117" width="279" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="Prj-7Y-C7P"/>
+                                    <constraint firstAttribute="width" constant="279" id="vxq-53-xlA"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your usage in kWH" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6HU-h5-Ahq" propertyAccessControl="none">
+                                <rect key="frame" x="128" y="291" width="206.5" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your usage in kWH" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="apa-Xs-Mg3">
+                                <rect key="frame" x="128" y="489" width="206.5" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your usage in kWH" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ifE-B4-taT">
+                                <rect key="frame" x="128" y="393" width="206.5" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Cunsumption Charge :      " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rn-3U-nKd">
+                                <rect key="frame" x="20" y="593" width="374" height="23"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="Z8O-nB-cdE"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="dmH-Cd-LSP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Off-Peak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNf-fY-VOf">
+                                <rect key="frame" x="20" y="400" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your net Total is $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htd-fx-RVf">
+                                <rect key="frame" x="20" y="763.5" width="374" height="23"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="lCD-7V-uiS"/>
+                                    <constraint firstAttribute="width" constant="374" id="uhk-cx-nXq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6HU-h5-Ahq" secondAttribute="trailing" constant="79.5" id="0wT-9m-Jdx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bLn-ta-bAE" secondAttribute="trailing" constant="67" id="3dV-zY-hIb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="htd-fx-RVf" secondAttribute="trailing" constant="20" id="3s0-Xc-uhq"/>
+                            <constraint firstItem="3rn-3U-nKd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6Jh-cc-blP"/>
+                            <constraint firstItem="htd-fx-RVf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7Qc-Y6-mSa"/>
+                            <constraint firstItem="htd-fx-RVf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DWl-Zd-p05"/>
+                            <constraint firstItem="wNf-fY-VOf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="E2m-TP-a7w"/>
+                            <constraint firstItem="ifE-B4-taT" firstAttribute="leading" secondItem="wNf-fY-VOf" secondAttribute="trailing" constant="39" id="EUm-yK-4Vn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="htd-fx-RVf" secondAttribute="trailing" constant="20" id="Fre-jK-xRm"/>
+                            <constraint firstItem="ifE-B4-taT" firstAttribute="top" secondItem="6HU-h5-Ahq" secondAttribute="bottom" constant="68" id="Gms-Lk-Sia"/>
+                            <constraint firstItem="htd-fx-RVf" firstAttribute="top" secondItem="SLF-Hr-sVq" secondAttribute="bottom" constant="41" id="L13-RT-lpL"/>
+                            <constraint firstItem="SLF-Hr-sVq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="M5w-yU-lbD"/>
+                            <constraint firstItem="ea9-Gc-Zh3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MNP-1O-4ui"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ifE-B4-taT" secondAttribute="trailing" constant="79.5" id="NKz-4t-m4c"/>
+                            <constraint firstItem="6HU-h5-Ahq" firstAttribute="top" secondItem="bLn-ta-bAE" secondAttribute="bottom" constant="47" id="OuR-Hr-DbX"/>
+                            <constraint firstItem="6HU-h5-Ahq" firstAttribute="leading" secondItem="ea9-Gc-Zh3" secondAttribute="trailing" constant="41" id="QVi-GD-5ZH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="apa-Xs-Mg3" secondAttribute="trailing" constant="79.5" id="RRT-ir-pRk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="htd-fx-RVf" secondAttribute="trailing" constant="20" id="RW0-GD-OTK"/>
+                            <constraint firstItem="bLn-ta-bAE" firstAttribute="top" secondItem="8rp-Gg-aqn" secondAttribute="bottom" constant="19.5" id="T17-jF-wb9"/>
+                            <constraint firstItem="aYu-aO-2n5" firstAttribute="top" secondItem="wNf-fY-VOf" secondAttribute="bottom" constant="75" id="UB0-Rv-Nfb"/>
+                            <constraint firstItem="SLF-Hr-sVq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="VSg-zS-ycE"/>
+                            <constraint firstItem="3rn-3U-nKd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ViL-qf-tFJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SLF-Hr-sVq" secondAttribute="trailing" constant="67" id="Yyi-KJ-LJ5"/>
+                            <constraint firstItem="ea9-Gc-Zh3" firstAttribute="top" secondItem="bLn-ta-bAE" secondAttribute="bottom" constant="54" id="aL2-u1-tO0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3rn-3U-nKd" secondAttribute="trailing" constant="20" id="awA-o6-d7U"/>
+                            <constraint firstItem="SLF-Hr-sVq" firstAttribute="top" secondItem="3rn-3U-nKd" secondAttribute="bottom" constant="71.5" id="bqU-9A-XIf"/>
+                            <constraint firstItem="bLn-ta-bAE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="cBg-7l-fa1"/>
+                            <constraint firstItem="3rn-3U-nKd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d0L-lW-rC3"/>
+                            <constraint firstItem="apa-Xs-Mg3" firstAttribute="leading" secondItem="aYu-aO-2n5" secondAttribute="trailing" constant="35" id="duc-Bf-ayX"/>
+                            <constraint firstItem="aYu-aO-2n5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gcC-DQ-ioz"/>
+                            <constraint firstItem="wNf-fY-VOf" firstAttribute="top" secondItem="ea9-Gc-Zh3" secondAttribute="bottom" constant="81" id="iG5-Bc-w3I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="apa-Xs-Mg3" secondAttribute="trailing" constant="79.5" id="l9y-Sg-DLl"/>
+                            <constraint firstItem="8rp-Gg-aqn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="mzf-do-5Iy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SLF-Hr-sVq" secondAttribute="trailing" constant="67" id="oDT-be-UgS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3rn-3U-nKd" secondAttribute="trailing" constant="20" id="ohL-Ni-EVy"/>
+                            <constraint firstItem="htd-fx-RVf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ooq-Qo-Yav"/>
+                            <constraint firstItem="3rn-3U-nKd" firstAttribute="top" secondItem="apa-Xs-Mg3" secondAttribute="bottom" constant="70" id="pIn-uF-beQ"/>
+                            <constraint firstItem="8rp-Gg-aqn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="q7G-R7-SGI"/>
+                            <constraint firstItem="ea9-Gc-Zh3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qXg-tm-3qF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8rp-Gg-aqn" secondAttribute="trailing" constant="20" id="rwf-nz-oQn"/>
+                            <constraint firstItem="bLn-ta-bAE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="snA-Zg-XlJ"/>
+                            <constraint firstItem="apa-Xs-Mg3" firstAttribute="top" secondItem="ifE-B4-taT" secondAttribute="bottom" constant="62" id="wxn-Fh-Tem"/>
+                            <constraint firstItem="apa-Xs-Mg3" firstAttribute="leading" secondItem="aYu-aO-2n5" secondAttribute="trailing" constant="35" id="xfW-fj-3Wl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="f1" destination="6HU-h5-Ahq" id="0J1-YL-8Bb"/>
+                        <outlet property="f2" destination="ifE-B4-taT" id="F7J-Kx-JfB"/>
+                        <outlet property="f3" destination="apa-Xs-Mg3" id="CWA-wL-8rx"/>
+                        <outlet property="l1" destination="3rn-3U-nKd" id="8Mb-Fh-4w2"/>
+                        <outlet property="l2" destination="htd-fx-RVf" id="98v-eL-atH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="w2Q-Ub-2aA">
+            <objects>
+                <viewController storyboardIdentifier="welcome" id="RhN-8w-Tqe" customClass="WelcomeViewController" customModule="Power_Cost" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ohE-cF-Giy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bal-nE-ytb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ft0-Q5-Drt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ft0-Q5-Drt" firstAttribute="trailing" secondItem="Bal-nE-ytb" secondAttribute="trailing" id="2T7-0y-A2k"/>
+                            <constraint firstItem="ft0-Q5-Drt" firstAttribute="bottom" secondItem="Bal-nE-ytb" secondAttribute="bottom" id="SUO-3l-fzk"/>
+                            <constraint firstItem="Bal-nE-ytb" firstAttribute="leading" secondItem="ft0-Q5-Drt" secondAttribute="leading" id="Wd9-O5-Osd"/>
+                            <constraint firstItem="Bal-nE-ytb" firstAttribute="top" secondItem="ft0-Q5-Drt" secondAttribute="top" id="vQb-P6-gLN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="holderView" destination="Bal-nE-ytb" id="KDx-c2-kdJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLe-ph-Kui" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="volt" width="200" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
