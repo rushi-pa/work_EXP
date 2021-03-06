@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="assignment_1.Restock"
+             Title="Restock ">
+   <ContentPage.Content>
+        <Grid Padding="10">
+            
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry x:Name="quanEntered" Placeholder="Enter new quantity" Text="" FontSize="20"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Grid.Row="1" >
+                <Button Text="Restock" Clicked="restockBtnAsync"
+                        BackgroundColor="green" 
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        TextColor="White" 
+                        BorderRadius="5" />
+                <Button Text="Cancel" Clicked="cancelBtn"
+                        BackgroundColor="Gold" 
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        TextColor="#000" 
+                        BorderRadius="5"/>
+            </StackLayout>
+
+            <ListView x:Name="baba" Grid.Row="2" 
+                  ItemsSource="{Binding item}"
+                  HasUnevenRows="True"
+               ItemSelected="OnListViewItemSelected"
+                  ItemTapped="OnListViewItemTapped"
+              >
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                 <Label Grid.Column="0" 
+                                   Text="{Binding name}"
+                                   FontAttributes="Bold" />
+                               
+                            </StackLayout>
+                               
+                            <Label Grid.Column="4" 
+                                   Text="{Binding quantity}"
+                                   VerticalOptions="End" />
+
+                        </Grid>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
